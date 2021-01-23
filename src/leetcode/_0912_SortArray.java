@@ -2,8 +2,12 @@ package leetcode;
 
 public class _0912_SortArray {
 	public int[] sortArray(int[] nums) {
-		// quicksort(nums, 0, nums.length - 1);
 		mergesort(nums, 0, nums.length - 1, new int[nums.length]);
+		return nums;
+	}
+
+	public int[] sortArry_quick(int[] nums) {
+		quicksort(nums, 0, nums.length - 1);
 		return nums;
 	}
 
